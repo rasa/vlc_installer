@@ -1,7 +1,7 @@
 # vlc_installer
 
-vlc_installer lets you download and install most of the freeware
-applications available at http://www.videolan.org/.
+vlc_installer downloads and installs the VLC media player available 
+at http://www.videolan.org/.
 
 vlc_installer looks in the directory where vlc_installer.exe is for
 any files it needs before attempting to download them. If it does download a
