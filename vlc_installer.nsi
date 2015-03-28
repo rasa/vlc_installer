@@ -1,6 +1,6 @@
 # Copyright (c) 2005-2015 Ross Smith II (http://smithii.com). MIT Licensed.
 
-!define VLC_VER 2.1.5
+!define VLC_VER ${PRODUCT_VERSION}
 #!define INSTALL_IN_PROGRAMFILES64
 
 !define PRODUCT_NAME "vlc_installer"
