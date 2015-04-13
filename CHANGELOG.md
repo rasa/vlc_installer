@@ -1,3 +1,7 @@
+## 2.2.0.1 (12-Apr-2015)
+
+  * Update Inetc NSIS plugin to 1.0.4.4
+
 ## 2.2.0 (27-Mar-2015)
 
   * Updated VLC to version 2.2.0
