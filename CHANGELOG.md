@@ -1,3 +1,9 @@
+## 2.2.1 (20-May-2015)
+
+  * Updated VLC to version 2.2.1
+  * Remove UPX compression
+  * Update Makefile
+
 ## 2.2.0.1 (12-Apr-2015)
 
   * Update Inetc NSIS plugin to 1.0.4.4

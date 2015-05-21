@@ -2,12 +2,14 @@
 
 !ifdef INSTALL_IN_PROGRAMFILES64
 
-!insertmacro DownloadEXE "1"    "VLC ${VLC_VER} 64-Bit Installer"   "http://download.videolan.org/pub/videolan/vlc/${VLC_VER}/win64/vlc-${VLC_VER}-win64.exe" "" ''
+# http://get.videolan.org/vlc/2.2.1/win64/vlc-2.2.1-win64.exe
+
+!insertmacro DownloadEXE "1"    "VLC ${VLC_VER} 64-Bit Installer"   "http://get.videolan.org/vlc/${VLC_VER}/win64/vlc-${VLC_VER}-win64.exe" "" ''
 !insertmacro DownloadAny "1"    "libaacs.dll - AACS dynamic library (64 bit)"    "http://vlc-bluray.whoknowsmy.name/files/win64/libaacs.dll" "" ''
 
 !else
 
-!insertmacro DownloadEXE "1"    "VLC ${VLC_VER} 32-Bit Installer"   "http://download.videolan.org/pub/videolan/vlc/${VLC_VER}/win32/vlc-${VLC_VER}-win32.exe" "" ''
+!insertmacro DownloadEXE "1"    "VLC ${VLC_VER} 32-Bit Installer"   "http://get.videolan.org/vlc/${VLC_VER}/win32/vlc-${VLC_VER}-win32.exe" "" ''
 !insertmacro DownloadAny "1"    "libaacs.dll - AACS dynamic library (32 bit)"    "http://vlc-bluray.whoknowsmy.name/files/win32/libaacs.dll" "" ''
 
 !endif
