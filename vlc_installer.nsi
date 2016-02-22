@@ -1,4 +1,4 @@
-# Copyright (c) 2005-2015 Ross Smith II (http://smithii.com). MIT Licensed.
+# Copyright (c) 2005-2016 Ross Smith II (http://smithii.com). MIT Licensed.
 
 !define VLC_VER ${PRODUCT_VERSION}
 #!define INSTALL_IN_PROGRAMFILES64

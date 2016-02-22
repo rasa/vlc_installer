@@ -1,3 +1,7 @@
+## 2.2.2 (21-Feb-2016)
+
+  * Updated VLC to version 2.2.2
+
 ## 2.2.1 (20-May-2015)
 
   * Updated VLC to version 2.2.1
