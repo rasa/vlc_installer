@@ -1,3 +1,8 @@
+## 2.2.2 (reissue) (16-Mar-2016)
+
+  * Fixed URL to use mirrors.syringanetworks.net mirror
+  * Tweaked build scripts to publish both win32 and win64 versions
+
 ## 2.2.2 (21-Feb-2016)
 
   * Updated VLC to version 2.2.2
