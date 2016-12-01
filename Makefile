@@ -32,8 +32,7 @@ VER?=$(strip $(shell sed -rne 's/^\s*\#define\s+(VER_STRING2|PACKAGE_VERSION)\s+
 APP?=$(strip $(shell sed -rne 's/^\s*\#define\s+(VER_INTERNAL_NAME|PACKAGE)\s+"([^"]*)".*/\2/p' version.h))
 endif
 
-FLAVOR?=win32
-APP_EXE:=$(APP)-$(FLAVOR).exe
+APP_EXE:=$(APP).exe
 
 APP_FILES:=\
 $(APP_EXE) \
@@ -42,6 +41,7 @@ $(wildcard *.md)
 
 #######################################################################
 
+FLAVOR?=win32
 REPO?=$(notdir $(PWD))
 
 APP_DESC?=$(APP)
@@ -302,10 +302,10 @@ TAGGED:=.$(TAG).tagged
 $(TAGGED):	$(APP_ZIP)
 	if ! git tag | grep -q -P "\b$(TAG)\b"; then \
 		git tag -a $(TAG) -m "Version $(VER)" ;\
-		git push origin --tags ;\
-		touch $@ ;\
-		echo Tag $(TAG) created on Github ;\
 	fi
+	git push origin --tags
+	touch $@
+	@-echo Tag $(TAG) created on Github
 
 .PHONY:	tag
 tag:	$(TAGGED)

@@ -1,4 +1,4 @@
-# Copyright (c) 2002-2015, Ross Smith II. MIT licensed.
+# Copyright (c) 2002-2016, Ross Smith II. MIT licensed.
 
 APP_FILES+=license.txt
 
@@ -8,6 +8,10 @@ NSIS_FILES+=version.txt
 NSIS_FILES+=license.txt
 NSIS_FILES+=$(wildcard *.nsh)
 NSIS_FILES+=$(wildcard ../nshlib/*.nsh)
+
+ifeq ("$(FLAVOR)", "win64")
+MAKENSIS_OPTS64=/DINSTALL_IN_PROGRAMFILES64=1
+endif
 
 #######################################################################
 
@@ -26,7 +30,7 @@ endif
 
 $(RELEASE_APP_EXE):	$(APP_NSI) $(NSIS_FILES)
 	test -d $(dir $@) || mkdir -p $(dir $@)
-	$(MAKENSIS) /V4 /O$(APP).log /DPRODUCT_VERSION=$(VER) /DPRODUCT_OUTFILE=$@ $(MAKENSIS_OPTS) $<
+	$(MAKENSIS) /V4 /O$(APP).log /DPRODUCT_VERSION=$(VER) /DPRODUCT_OUTFILE=$@ $(MAKENSIS_OPTS) $(MAKENSIS_OPTS64) $<
 	chmod +x $@
 
 .PHONY: all
