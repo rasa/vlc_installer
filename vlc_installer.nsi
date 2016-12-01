@@ -29,7 +29,7 @@
 !define UNZIP_DIR "$INSTDIR"
 
 !ifdef INSTALL_IN_PROGRAMFILES64
-	InstType "All - VLC 64-bit (Experimental) - All Windows 64-bit versions"
+	InstType "All - VLC 64-bit - All Windows 64-bit versions"
 !else
 	InstType "All - VLC 32-bit - All Windows versions"
 !endif

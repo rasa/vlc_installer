@@ -1,3 +1,7 @@
+## 2.2.4 (30-Nov-2016)
+
+  * Updated VLC to version 2.2.4
+
 ## 2.2.2 (reissue) (16-Mar-2016)
 
   * Fixed URL to use mirrors.syringanetworks.net mirror
